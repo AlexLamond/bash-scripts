@@ -1,0 +1,8 @@
+enabled: true
+types:
+  - feat
+  - fix
+  - docs
+  - security
+  - ci
+  - revert
