@@ -66,8 +66,6 @@ sudo systemctl reload apache2
 sudo certbot --apache --agree-tos --preferred-challenges http -d ${name}.${servername}
 
 # ---- Now we've set up the domain, let's configure Wordpress ----
-# !!! If you do not wish to setup Wordpress/WooCommerce you can remove the rest of this script !!! #
-# !!! If you need a database setup, do not cut here, but further down !!! #
 
 # Create a random name for the database, the database username and database password
 db=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-20})
